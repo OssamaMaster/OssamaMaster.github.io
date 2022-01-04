@@ -1,0 +1,123 @@
+:root{
+    --main-text-color:hsl(0, 0%, 100%);
+    --text-font:'Outfit', sans-serif;
+    --inside-Card-width:270px;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    height: 700px;
+    font-family: var(--text-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: hsl(216, 50%, 16%);
+    width: 310px;    
+    display: flex;
+    Flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.Pic{
+    width: var(--inside-Card-width);
+    margin-top: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius:10px;
+    position: relative;
+}
+.Pic-hover{
+    width: var(--inside-Card-width);
+    height: var(--inside-Card-width);
+    margin-top: 20px;
+    background-color: rgb(0 255 248 / 39%);
+    border-radius:10px;
+    position:absolute;
+    opacity:0;
+}
+.Pic-hover:hover{
+    
+       opacity:1;
+}
+.Head{
+    color: var(--main-text-color);
+    font-size: 18px;
+    margin-top: -8px;
+    margin-bottom: -15px;
+    margin-right: 96px;
+    font-family: var(--text-font);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.Head:hover{
+    color:rgb(0, 255, 248);
+}
+div div{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    width: var(--inside-Card-width);
+    color: rgb(0, 255, 248);
+    margin-top: -50px;
+}
+svg{
+    margin:auto;
+    width:20px;
+}
+.Time{
+    color: rgb(129,149,182);
+}
+.Details{
+    color: rgb(129,149,182);
+    font-family: var(--text-font);
+    font-weight: 200;
+    margin-top: -29px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.footp{
+    width: 25px;
+    border: 1px solid var(--main-text-color);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.foot{
+    font-size:14px;
+    width: var(--inside-Card-width);
+    color: rgb(129,149,182);
+    border-top: 0.25px;
+    border-top-style: solid;
+    border-top-color: rgb(57 73 94);
+    padding-top: 15px;
+    margin-top: 2px;
+    display: flex;
+    padding-left: 5px;
+    margin-bottom: 30px;
+}
+.foot span{
+    color:var(--main-text-color);
+    margin-left:5px;
+}
+.foot span:hover {
+    
+    color:rgb(0, 255, 248);
+}
+
+
+
+@media (max-width:1440px){
+    body{
+        width:400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} 
+@media (max-width:375px) {
+    body{
+        width:375px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
