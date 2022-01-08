@@ -143,7 +143,6 @@ main{
     .container, img {
         width:330px;
     }
-<<<<<<< HEAD
     .container2, .button{
         width:295px;
     }
@@ -152,11 +151,3 @@ main{
     }
    
 }
-=======
-     .container2, .botton{
-        width:320px;
-        margin-left:auto;
-        margin-right:auto;
-    }
-}
->>>>>>> 2a3703a41f36078fc41b0727dbdb4b8bc0110bd1
