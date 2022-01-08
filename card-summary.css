@@ -43,8 +43,9 @@ img{
     margin-bottom: 0px;    
 }
 main{
-    margin-right: 35px;
-    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .details{
     font-family: var(--font-family);
@@ -61,13 +62,12 @@ main{
     flex-wrap: wrap;
     border-radius: 15px;
     background-color: hsl(225deg 100% 94% / 44%);
-    padding-left: 25px;
-    padding-right: 25px;
     height: 100px;
+    width: 407px;
 }
 .price{
     width: 89px;
-    margin-left: -144px;
+    margin-left: -235px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -94,6 +94,11 @@ main{
     text-decoration-thickness: 2px;
     font-weight: 600;
 }
+.choice:hover{
+    text-decoration: none;
+    color: rgb(118, 108, 241);
+    
+    } 
 .price span{
     font-weight: 900;
     font-family: var(--font-family);
@@ -104,7 +109,7 @@ main{
     background-color: var(--Bright-blue);
     color: var(--Very-pale-blue);
     border-radius: 10px;
-    width: 363px;
+    width: 407px;
     height: 51px;
     margin-top: 30px;
     font-size: 15px;
@@ -113,12 +118,18 @@ main{
     border: 1px soild var(--Bright-blue);
     box-shadow: 2px 9px 22px hsl(245deg 75% 52% / 35%);
 }
+.button:hover{
+    background-color:rgb(118, 108, 241);
+}
 .cancel{
     text-align: center;
     color: var(--Desaturated-blue);
     font-family: var(--font-family);
     font-weight: 700;
     margin-top: 25px;
+}
+.cancel:hover{
+    color:black;
 }
 .footer{
     text-align: center;
@@ -129,9 +140,14 @@ main{
     body{
         width: 360px;
     }
-    .container, img{
+    .container, img {
         width:330px;
-        margin-left:auto;
-        margin-right:auto;
     }
+    .container2, .button{
+        width:295px;
+    }
+    .price{
+        margin-left: -95px;
+    }
+   
 }
