@@ -85,11 +85,26 @@ button{
 .card1 button{
     color:var(--card1)
 }
+.card1 button:hover{
+    background-color: var(--card1);
+    color: var(--otherp);
+    border:2px solid var(--otherp);
+}
 .card2 button{
     color:var(--card2)
 }
+.card2 button:hover{
+    background-color: var(--card2);
+    color:var(--paragraphs);
+    border:2px solid var(--otherp);
+}
 .card3 button{
     color:var(--card3)
+}
+.card3 button:hover{
+    background-color: var(--card3);
+    color:var(--paragraphs);
+    border:2px solid var(--otherp);
 }
 .footer{
     font-size: 11px;
@@ -97,3 +112,34 @@ button{
     color: hsl(228, 45%, 44%);
     margin-top: 742px;
 }
+
+@media (max-width:375px){
+    .page{
+        width: 345px;
+        height: calc(460px*3);
+        margin-top: 10px;
+    }
+    .container{
+        flex-direction: column;
+        margin-top: 73px;
+        margin-left: 34px;
+    }
+    body{
+        margin-left:10px;
+    }
+    button{
+        margin-top: 0px;
+        margin-bottom: 43px;
+    }
+    .card1{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .card3{
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+}
+
