@@ -1,0 +1,139 @@
+:root{
+    --red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --Font-size: 15px;
+    --font-family1: 'Kumbh Sans', sans-serif;
+    --font-family: 'Poppins', sans-serif;
+}
+.container{
+    box-sizing: border-box;
+    width: 370px;
+    height: 1319px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 51px;
+    background-color: var(--Very-Light-Gray);
+}
+.first{
+    font-family: var(--font-family);
+    font-weight: 100;
+    font-size: 25px;
+}
+.second{
+    font-family: var(--font-family1);
+    font-weight: bold;
+    font-size: 27px;
+}
+.details{
+    font-family: var(--font-family1);
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 29px;
+    line-height: 26px;
+    margin-top: 18px;
+    margin-right: 40px;
+    color: var(--Grayish-Blue);
+}
+.card1, .card2, .card3, .card4{
+    width: 315px;
+    height: 225px;
+    background-color: white;
+    margin-left: 26px;
+    margin-top: 75px;
+    margin-bottom: -56px;
+    box-shadow: 0px 9px 20px 9px hsl(229deg 6% 66% / 17%);
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 5px 0px 0px 0px;
+    text-align: left;
+    font-family: var(--font-family1);
+    background-repeat: no-repeat;
+    background-position-x: 224px;
+    background-position-y: 131px;
+}
+
+.card1{
+    border-color: var(--Cyan);
+    background-image: url(images/icon-supervisor.svg);
+}
+
+.card2{
+    border-color: var(--red);
+    background-image: url(images/icon-team-builder.svg)
+}
+
+.card3{
+    border-color: var(--Orange);
+    background-image: url(images/icon-karma.svg)
+}
+
+.card4{
+    border-color: var(--Blue);
+    background-image: url(images/icon-calculator.svg)
+}
+
+.card1 h1, .card2 h1, .card3 h1, .card4 h1{
+    font-size: 23px;
+    margin-left: 26px;
+    margin-top: 24px;
+}
+.card1 p, .card2 p, .card3 p, .card4 p{
+    font-size: 13px;
+    margin-left: 29px;
+    margin-top: -11px;
+    width: 254px;
+    letter-spacing: 0.6px;
+    line-height: 23px;
+}
+
+@media (min-width:376px){
+    .container{
+        width: 1440px;
+        flex-flow: column wrap;
+        margin-top: 80px;
+        align-items: center;
+    }
+    .first{
+        font-size: 37px;
+    }
+    .second{
+        font-size: 39px;
+        margin-top: -4px;
+    }
+    .details{
+        width: 535px;
+    }
+    .card1, .card2, .card3, .card4{
+        width: 348px;
+        height: 245px;
+        background-position-x: 254px;
+        background-position-y: 148px;
+        position: absolute;
+    }
+    .card1 p, .card2 p, .card3 p, .card4 p{
+        margin-top: -3px;
+        width: 271px;
+    }
+    .card1{
+        margin-left: -767px;
+        margin-top: 372px;
+    }
+    .card2{
+        margin-left: -1px;
+        margin-top: 231px;
+    }
+    .card3{
+        margin-left: -1px;
+        margin-top: 511px;
+    }
+    .card4{
+        margin-left: 749px;
+        margin-top: 371px;
+    }
+}
