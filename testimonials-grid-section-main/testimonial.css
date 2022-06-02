@@ -120,13 +120,14 @@
 }
 @media (min-width:375px){
     .container{
+        width:1152px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         align-items: start;
     }
     .card1{
-        width: 547px;
+        width: 542px;
         height: 283px;
         grid-area: 1/1/2/3;
         margin-top:0px;
@@ -144,19 +145,19 @@
         width: 256px;
         height: 283px;
         grid-area: 1/3/2/4;
-        margin-left: -27px;
+        margin-left: -34px;
     }
     .card5{
         grid-area: 1/4/3/5;
         width: 256px;
         height: 580px;
-        margin-left: 9px;
+        margin-left: -22px;
     }
     .card4{
         grid-area:2/2/3/4;
         width: 545px;
         height: 270px;
-        margin-left: -41px;
+        margin-left: -45px;
     }
     .card3{
         grid-area: 2/1/3/2;
