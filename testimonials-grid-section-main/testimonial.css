@@ -125,6 +125,8 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         align-items: start;
+        margin-left: 166px;
+        margin-top: 164px;
     }
     .card1{
         width: 542px;
